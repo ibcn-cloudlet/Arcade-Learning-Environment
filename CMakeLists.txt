@@ -122,6 +122,9 @@ include_directories(
   ${SOURCE_DIR}/external/TinyMT
 )
 
+SET(CMAKE_POSITION_INDEPENDENT_CODE ON)
+add_library(ale STATIC ${SOURCE_DIR}/ale_interface.cpp ${SOURCES})
+
 add_library(ale-lib SHARED ${SOURCE_DIR}/ale_interface.cpp ${SOURCES})
 set_target_properties(ale-lib PROPERTIES OUTPUT_NAME ale)
 set_target_properties(ale-lib PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
