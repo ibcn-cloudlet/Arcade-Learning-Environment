@@ -27,3 +27,12 @@ doc/examples/*Example
 *.lai
 *.la
 *.a
+
+# CMake
+CMakeCache.txt
+CMakeFiles
+Makefile
+cmake_install.cmake
+
+# Binary
+ale
